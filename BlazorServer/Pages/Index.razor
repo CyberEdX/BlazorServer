@@ -1,0 +1,15 @@
+﻿@page "/"
+@inject Microsoft.AspNetCore.Hosting.IWebHostEnvironment hostingEnv
+
+<PageTitle>Index</PageTitle>
+
+<h1 class="app-title" />
+
+Welcome to the App.
+
+<p>
+    Server: @Environment.GetEnvironmentVariable("COMPUTERNAME") (@Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT"))
+</p>
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
